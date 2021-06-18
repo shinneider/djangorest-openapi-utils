@@ -1,0 +1,8 @@
+include LICENSE
+include README.md
+
+recursive-include djangorest_openapi_utils/rapidoc/templates *
+recursive-include djangorest_openapi_utils/redoc/templates *
+recursive-include djangorest_openapi_utils/swagger/templates *
+global-exclude __pycache__
+global-exclude *.py[co]
