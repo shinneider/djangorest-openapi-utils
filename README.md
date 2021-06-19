@@ -115,10 +115,9 @@ pip install djangorest-openapi-utils
         schema = OpenApiSchema()
         
         def openapi_mount_description(self, path, method):
-            return self.openapi_id
-
+            return {'GET': 'Get ID', 'POST', 'Post ID', 'PUT': 'Put ID', 'PATCH': 'PATCH ID', 'DELETE': 'Delete ID'}[method]
         def get_object(self):
-            return self.openapi_description
+            return {'GET': 'Get Desc', 'POST', 'Post Desc', 'PUT': 'Put Desc', 'PATCH': 'PATCH Desc', 'DELETE': 'Delete Desc'}[method]
     ```
 
 # Check Result
